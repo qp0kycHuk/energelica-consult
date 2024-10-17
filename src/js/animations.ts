@@ -68,10 +68,10 @@ function scrollInit() {
 
   scrollElements.forEach((element) => {
     const key = element.getAttribute('data-animation')
-    const duration = element.getAttribute('data-duration') || 2
+    const duration = element.getAttribute('data-duration') || 1
     const end = element.getAttribute('data-end') || 'bottom -10%'
     const start = element.getAttribute('data-start') || 'top 110%'
-    const delay = 0.25 + parseFloat(element.getAttribute('data-delay') || '0')
+    const delay = 0.5 + parseFloat(element.getAttribute('data-delay') || '0')
     const actions = element.getAttribute('data-actions') || 'play reverse play reverse'
 
     const animation = gsapAnimation[key || '']

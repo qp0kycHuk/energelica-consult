@@ -1,8 +1,8 @@
 const elementsSizes = {
-  xs: '24px',
-  sm: '32px',
-  base: '60px',
-  lg: '70px',
+  xs: '32px',
+  sm: '42px',
+  base: '54px',
+  lg: '64px',
   xl: '80px',
 }
 
@@ -23,14 +23,14 @@ module.exports = {
     },
     screens: {
       xs: 420 + 29.98 + 'px',
-      sm: 580 + 29.98 + 'px',
+      sm: 620 + 29.98 + 'px',
       md: 740 + 29.98 + 'px',
       lg: 1170 + 29.98 + 'px',
-      xl: 1366 + 'px',
+      xl: 1366 + 29.98 + 'px',
     },
     container: {
       xs: 420 + 'px',
-      sm: 580 + 'px',
+      sm: 620 + 'px',
       md: 740 + 'px',
       lg: 1170 + 'px',
       xl: 1230 + 'px',
@@ -50,8 +50,7 @@ module.exports = {
       default: withOpacity('--default-rgb'),
     },
     fontFamily: {
-      base: "'Intro', arial, helvetica, sans-serif",
-      alt: "'Izhitsa', arial, helvetica, sans-serif",
+      base: "'Gilroy', arial, helvetica, sans-serif",
     },
     zIndex: [0, 321, 322, 323, 324, 325, 326, 327, 328, 329, 'auto'],
     extend: {
@@ -60,6 +59,7 @@ module.exports = {
       spacing: {
         [4.5]: 4.5 * 4 / 16 + 'rem',
         [12.5]: 12.5 * 4 / 16 + 'rem',
+        [13]: 13 * 4 / 16 + 'rem',
         [15]: 15 * 4 / 16 + 'rem',
         [18]: 18 * 4 / 16 + 'rem',
         [30]: 30 * 4 / 16 + 'rem',
@@ -75,9 +75,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@qpokychuk/tailwind-button-plugin')({
-      colorHoverOffset: 15
-    }),
+    require('@qpokychuk/tailwind-button-plugin'),
     require('@qpokychuk/tailwind-ratio-plugin'),
     require('@qpokychuk/tailwind-input-plugin')({
       border: "1px solid theme('colors.default / 40%')",

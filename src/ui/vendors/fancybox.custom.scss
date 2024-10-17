@@ -29,8 +29,8 @@
       position: absolute;
       width   : 32px;
       height  : 32px;
-      top     : 0;
-      right   : 0;
+      top     : 4px;
+      right   : 4px;
       padding : 0;
 
     }
@@ -39,8 +39,8 @@
       @media(max-width:theme('screens.sm')) {
         filter: none;
         color : theme('colors.default');
-        width : 12px;
-        height: 12px;
+        width : 14px;
+        height: 14px;
       }
     }
   }

@@ -1,0 +1,33 @@
+<%= require('./html-includes/header.html')() %>
+
+<section class="err-404 grow bg-l3">
+  <div class="flex items-center gap-4 sm:gap-5">
+    <c-icon class="icon shrink-0 w-10 h-14 text-primary" href="img/icons.svg#logo"></c-icon>
+    <div>
+      <div class="text-lg/tight sm:text-1.5xl font-bold uppercase">
+        Анжелика Дубровина
+      </div>
+      <div class="text-sm/tight sm:text-lg font-medium opacity-60">
+        Коуч, психолог
+        <c-icon class="icon text-2xl inline-block align-middle" href="img/icons.svg#arrow-right"></c-icon> <br class="sm:hidden">
+        Продюсер стартапов, личных брендов
+      </div>
+    </div>
+  </div>
+
+  <div class="err-404-image mt-10 sm:mt-20">
+    <img src="/img/404.svg" alt="" class="mx-auto">
+    <div class="mt-10 text-center opacity-80 max-sm:text-sm">
+      Возможно, запрашиваемая Вами страница была перенесена или удалена. <br class="max-sm:hidden">
+      Либо Вы допустили небольшую опечатку при вводе адреса.
+    </div>
+    <div class="mt-8 lg:mt-10 flex justify-center">
+      <a href="/" class="btn btn-primary btn-fill gap-3 sm:px-10 max-sm:w-full">
+        <span class="sm:text-lg font-bold">Вернуться на главную</span>
+        <c-icon class="icon text-2xl" href="img/icons.svg#arrow-right"></c-icon>
+      </a>
+    </div>
+  </div>
+</section>
+
+<%= require('./html-includes/footer.html')() %>
